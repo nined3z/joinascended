@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/ascnd/public_html/
+    - /bin/cp index.html favicon.svg og.jpg .htaccess $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R photos $DEPLOYPATH
